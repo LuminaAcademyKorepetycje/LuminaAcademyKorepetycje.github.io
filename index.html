@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumina Academy | Edukacja na najwyższym poziomie</title>
+    <title>Lumina Academy | Korepetycje • Rozwój • Wynik</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --dark-blue: #07233d;
             --cream: #fff7eb;
-            --accent: #d4af37; /* Złoty akcent dla efektu Premium */
+            --accent: #d4af37;
         }
         body {
             background-color: var(--dark-blue);
@@ -19,7 +19,6 @@
             padding: 0;
         }
 
-        /* NAWIGACJA */
         nav {
             background-color: rgba(7, 35, 61, 0.95);
             padding: 20px;
@@ -41,9 +40,8 @@
         }
         nav a:hover { color: var(--accent); }
 
-        /* HERO SECTION */
         header {
-            height: 80vh;
+            height: 70vh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -78,15 +76,14 @@
             text-transform: uppercase;
         }
 
-        /* SEKCJA OFERTY */
         .container {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 80px 20px;
+            padding: 60px 20px;
         }
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
             margin-top: 50px;
         }
@@ -104,13 +101,14 @@
 
         .btn {
             display: inline-block;
-            margin-top: 30px;
-            padding: 12px 35px;
+            margin-top: 40px;
+            padding: 15px 40px;
             border: 1px solid var(--cream);
             color: var(--cream);
             text-decoration: none;
             font-size: 0.9rem;
             letter-spacing: 2px;
+            text-transform: uppercase;
             transition: 0.3s;
         }
         .btn:hover { background: var(--cream); color: var(--dark-blue); }
@@ -122,11 +120,8 @@
 
     <nav>
         <a href="index.html">Strona Główna</a>
-        <a href="#oferta">Oferta</a>
-        <a href="#">Materiały</a>
-        <a href="#">E-booki</a>
-        <a href="#">O mnie</a>
-        <a href="#">Opinie</a>
+        <a href="oferta.html">Oferta</a>
+        <a href="o-mnie.html">O mnie</a>
         <a href="#">Kontakt</a>
     </nav>
 
@@ -135,30 +130,31 @@
              <img src="logo.png" alt="Lumina Academy">
         </div>
         <h1>LUMINA ACADEMY</h1>
-        <div class="tagline">Eksperckie wsparcie w nauce</div>
+        <div class="tagline">KOREPETYCJE • ROZWÓJ • WYNIK</div>
     </header>
 
     <div class="container" id="oferta">
-        <h2 style="text-align: center; font-family: 'Playfair Display'; font-size: 2.5rem;">Nasza Oferta</h2>
+        <h2 style="text-align: center; font-family: 'Playfair Display'; font-size: 2.5rem;">Nasze Przedmioty</h2>
         <div class="grid">
             <div class="card">
-                <h3>Języki Obce</h3>
-                <p>Angielski i Francuski. Przygotowanie do matur dwujęzycznych i certyfikatów.</p>
+                <h3>Język Angielski</h3>
+                <p>Przygotowanie do egzaminu ósmoklasisty, matury oraz przełamywanie bariery mówienia.</p>
             </div>
             <div class="card">
                 <h3>Matematyka</h3>
-                <p>Skuteczne przygotowanie do egzaminów i nadrabianie zaległości szkolnych.</p>
+                <p>Skuteczne nadrabianie zaległości i przygotowanie do egzaminów końcowych.</p>
             </div>
             <div class="card">
                 <h3>Fizyka</h3>
-                <p>Zrozumienie zjawisk i rozwiązywanie zadań w przystępny sposób.</p>
+                <p>Zrozumienie zjawisk i nauka rozwiązywania zadań w przyjaznej atmosferze.</p>
             </div>
         </div>
-        <center><a href="#" class="btn">Zapisz się na zajęcia</a></center>
+        
+        <center><a href="https://www.facebook.com/TWOJ_PROFIL" class="btn">Zapisz się na zajęcia</a></center>
     </div>
 
     <footer>
-        &copy; 2024 LUMINA ACADEMY | Profesjonalne Korepetycje
+        &copy; 2024 LUMINA ACADEMY | Profesjonalne Wsparcie w Nauce
     </footer>
 
 </body>
