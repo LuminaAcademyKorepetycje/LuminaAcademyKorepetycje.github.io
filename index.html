@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumina Academy | Eksperckie Korepetycje & Animacje</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <title>Lumina Academy | Edukacja na najwyższym poziomie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --dark-blue: #07233d;
             --cream: #fff7eb;
+            --accent: #d4af37; /* Złoty akcent dla efektu Premium */
         }
         body {
             background-color: var(--dark-blue);
@@ -16,111 +17,148 @@
             font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
         }
+
+        /* NAWIGACJA */
+        nav {
+            background-color: rgba(7, 35, 61, 0.95);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            border-bottom: 1px solid rgba(255, 247, 235, 0.1);
+            z-index: 1000;
+        }
+        nav a {
+            color: var(--cream);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+        nav a:hover { color: var(--accent); }
+
+        /* HERO SECTION */
         header {
-            height: 100vh;
+            height: 80vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 20px;
+            padding: 0 20px;
         }
-        .logo {
-            max-width: 200px; /* Tutaj pojawi się Twoje logo */
-            margin-bottom: 30px;
+        .logo-placeholder {
+            width: 150px;
+            height: 150px;
             border: 1px solid var(--cream);
             border-radius: 50%;
-            padding: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
         }
+        .logo-placeholder img { width: 100%; }
+
         h1 {
             font-family: 'Playfair Display', serif;
             font-size: 3.5rem;
             margin: 0;
-            letter-spacing: 3px;
-            text-transform: uppercase;
+            letter-spacing: 4px;
         }
-        .subtitle {
-            font-size: 1.2rem;
+        .tagline {
+            font-size: 1rem;
             font-weight: 300;
-            letter-spacing: 5px;
-            margin-bottom: 40px;
+            letter-spacing: 6px;
+            margin-top: 10px;
             text-transform: uppercase;
         }
+
+        /* SEKCJA OFERTY */
         .container {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 80px 20px;
-            text-align: center;
         }
-        .services {
+        .grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
             margin-top: 50px;
         }
-        .service-box {
+        .card {
             border: 1px solid rgba(255, 247, 235, 0.2);
-            padding: 30px;
+            padding: 40px 20px;
+            text-align: center;
             transition: 0.4s;
         }
-        .service-box:hover {
-            border-color: var(--cream);
-            background-color: rgba(255, 247, 235, 0.05);
+        .card:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
         }
-        h2 { font-family: 'Playfair Display', serif; font-size: 2rem; }
+        .card h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 15px; }
+
         .btn {
             display: inline-block;
-            margin-top: 40px;
-            padding: 15px 40px;
+            margin-top: 30px;
+            padding: 12px 35px;
             border: 1px solid var(--cream);
             color: var(--cream);
             text-decoration: none;
-            letter-spacing: 2px;
-            text-transform: uppercase;
             font-size: 0.9rem;
-            transition: 0.4s;
+            letter-spacing: 2px;
+            transition: 0.3s;
         }
-        .btn:hover {
-            background-color: var(--cream);
-            color: var(--dark-blue);
-        }
-        footer { padding: 40px; font-size: 0.8rem; opacity: 0.6; letter-spacing: 1px; }
-        @media (max-width: 768px) {
-            .services { grid-template-columns: 1fr; }
-            h1 { font-size: 2.5rem; }
-        }
+        .btn:hover { background: var(--cream); color: var(--dark-blue); }
+
+        footer { text-align: center; padding: 50px; opacity: 0.5; font-size: 0.8rem; }
     </style>
 </head>
 <body>
 
+    <nav>
+        <a href="index.html">Strona Główna</a>
+        <a href="#oferta">Oferta</a>
+        <a href="#">Materiały</a>
+        <a href="#">E-booki</a>
+        <a href="#">O mnie</a>
+        <a href="#">Opinie</a>
+        <a href="#">Kontakt</a>
+    </nav>
+
     <header>
-        ) -->
-        <h1>Lumina Academy</h1>
-        <div class="subtitle">Edukacja | Rozwój | Wynik</div>
-        <a href="#oferta" class="btn">Poznaj ofertę</a>
+        <div class="logo-placeholder">
+             <img src="logo.png" alt="Lumina Academy">
+        </div>
+        <h1>LUMINA ACADEMY</h1>
+        <div class="tagline">Eksperckie wsparcie w nauce</div>
     </header>
 
     <div class="container" id="oferta">
-        <p>Łączymy wieloletnie doświadczenie z pasją do nauczania. Specjalizujemy się w indywidualnym podejściu, które gwarantuje realne efekty i motywację do działania.</p>
-        
-        <div class="services">
-            <div class="service-box">
-                <h2>Korepetycje</h2>
-                <p>Angielski i Francuski na poziomie premium. Przygotowanie do egzaminów, matury dwujęzycznej oraz przełamywanie bariery mówienia.</p>
+        <h2 style="text-align: center; font-family: 'Playfair Display'; font-size: 2.5rem;">Nasza Oferta</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Języki Obce</h3>
+                <p>Angielski i Francuski. Przygotowanie do matur dwujęzycznych i certyfikatów.</p>
             </div>
-            <div class="service-box">
-                <h2>Animacje</h2>
-                <p>Profesjonalna oprawa eventów, urodzin i wesel. Kreatywne scenariusze, warsztaty karate i niezapomniane wspomnienia.</p>
+            <div class="card">
+                <h3>Matematyka</h3>
+                <p>Skuteczne przygotowanie do egzaminów i nadrabianie zaległości szkolnych.</p>
+            </div>
+            <div class="card">
+                <h3>Fizyka</h3>
+                <p>Zrozumienie zjawisk i rozwiązywanie zadań w przystępny sposób.</p>
             </div>
         </div>
-
-        <a href="https://www.facebook.com/TwojProfil" class="btn">Zapisz się już dziś</a>
+        <center><a href="#" class="btn">Zapisz się na zajęcia</a></center>
     </div>
 
     <footer>
-        &copy; 2026 LUMINA ACADEMY. WSZELKIE PRAWA ZASTRZEŻONE.
+        &copy; 2024 LUMINA ACADEMY | Profesjonalne Korepetycje
     </footer>
 
 </body>
