@@ -3,40 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumina Academy | Edukacja z Pasją</title>
+    <title>Lumina Academy | Eksperckie Korepetycje & Animacje</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --dark-blue: #07233d;
+            --cream: #fff7eb;
+        }
         body {
-            background-color: #07233d; /* Twój granat */
-            color: #fff7eb;           /* Twój kremowy */
-            font-family: 'Georgia', serif;
+            background-color: var(--dark-blue);
+            color: var(--cream);
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+        .logo {
+            max-width: 200px; /* Tutaj pojawi się Twoje logo */
+            margin-bottom: 30px;
+            border: 1px solid var(--cream);
+            border-radius: 50%;
+            padding: 10px;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
             margin: 0;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 300;
+            letter-spacing: 5px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 20px;
             text-align: center;
         }
-        h1 { font-size: 3rem; letter-spacing: 2px; }
-        p { font-size: 1.2rem; opacity: 0.9; }
-        .cta {
-            margin-top: 20px;
-            padding: 10px 25px;
-            border: 1px solid #fff7eb;
-            color: #fff7eb;
-            text-decoration: none;
-            transition: 0.3s;
+        .services {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 50px;
         }
-        .cta:hover {
-            background-color: #fff7eb;
-            color: #07233d;
+        .service-box {
+            border: 1px solid rgba(255, 247, 235, 0.2);
+            padding: 30px;
+            transition: 0.4s;
+        }
+        .service-box:hover {
+            border-color: var(--cream);
+            background-color: rgba(255, 247, 235, 0.05);
+        }
+        h2 { font-family: 'Playfair Display', serif; font-size: 2rem; }
+        .btn {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 15px 40px;
+            border: 1px solid var(--cream);
+            color: var(--cream);
+            text-decoration: none;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: 0.4s;
+        }
+        .btn:hover {
+            background-color: var(--cream);
+            color: var(--dark-blue);
+        }
+        footer { padding: 40px; font-size: 0.8rem; opacity: 0.6; letter-spacing: 1px; }
+        @media (max-width: 768px) {
+            .services { grid-template-columns: 1fr; }
+            h1 { font-size: 2.5rem; }
         }
     </style>
 </head>
 <body>
-    <h1>LUMINA ACADEMY</h1>
-    <p>Eksperckie korepetycje i kreatywne animacje.</p>
-    <p>Strona w budowie. Zapraszamy wkrótce!</p>
-    <a href="https://facebook.com/TwojProfil" class="cta">Odwiedź nas na Facebooku</a>
+
+    <header>
+        ) -->
+        <h1>Lumina Academy</h1>
+        <div class="subtitle">Edukacja | Rozwój | Wynik</div>
+        <a href="#oferta" class="btn">Poznaj ofertę</a>
+    </header>
+
+    <div class="container" id="oferta">
+        <p>Łączymy wieloletnie doświadczenie z pasją do nauczania. Specjalizujemy się w indywidualnym podejściu, które gwarantuje realne efekty i motywację do działania.</p>
+        
+        <div class="services">
+            <div class="service-box">
+                <h2>Korepetycje</h2>
+                <p>Angielski i Francuski na poziomie premium. Przygotowanie do egzaminów, matury dwujęzycznej oraz przełamywanie bariery mówienia.</p>
+            </div>
+            <div class="service-box">
+                <h2>Animacje</h2>
+                <p>Profesjonalna oprawa eventów, urodzin i wesel. Kreatywne scenariusze, warsztaty karate i niezapomniane wspomnienia.</p>
+            </div>
+        </div>
+
+        <a href="https://www.facebook.com/TwojProfil" class="btn">Zapisz się już dziś</a>
+    </div>
+
+    <footer>
+        &copy; 2026 LUMINA ACADEMY. WSZELKIE PRAWA ZASTRZEŻONE.
+    </footer>
+
 </body>
 </html>
