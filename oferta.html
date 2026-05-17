@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta | Lumina Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --dark-blue: #07233d; --cream: #fff7eb; --accent: #d4af37; }
+        body { background-color: var(--dark-blue); color: var(--cream); font-family: 'Montserrat', sans-serif; margin: 0; }
+        nav { background-color: rgba(7, 35, 61, 0.95); padding: 20px; display: flex; justify-content: center; gap: 20px; }
+        nav a { color: var(--cream); text-decoration: none; text-transform: uppercase; font-size: 0.8rem; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 3rem; text-align: center; margin-bottom: 50px; }
+        .offer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .offer-item { border-left: 3px solid var(--accent); padding: 20px 40px; background: rgba(255,255,255,0.03); }
+        h2 { font-family: 'Playfair Display', serif; color: var(--accent); }
+        ul { list-style: none; padding: 0; }
+        ul li::before { content: "• "; color: var(--accent); }
+        .price-info { text-align: center; margin-top: 60px; font-style: italic; opacity: 0.8; }
+        @media (max-width: 768px) { .offer-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Strona Główna</a>
+        <a href="oferta.html">Oferta</a>
+        <a href="o-mnie.html">O mnie</a>
+        <a href="#">Kontakt</a>
+    </nav>
+
+    <div class="container">
+        <h1>Nasza Oferta</h1>
+        <div class="offer-grid">
+            <div class="offer-item">
+                <h2>Język Francuski</h2>
+                <ul>
+                    <li>Przygotowanie do matury dwujęzycznej</li>
+                    <li>Konwersacje na każdym poziomie</li>
+                    <li>Nauka od podstaw dla dzieci i dorosłych</li>
+                </ul>
+            </div>
+            <div class="offer-item">
+                <h2>Język Angielski</h2>
+                <ul>
+                    <li>Egzamin ósmoklasisty i matura</li>
+                    <li>Przełamywanie bariery mówienia</li>
+                    <li>Angielski w biznesie i podróży</li>
+                </ul>
+            </div>
+            <div class="offer-item">
+                <h2>Matematyka</h2>
+                <ul>
+                    <li>Przygotowanie do bieżących sprawdzianów</li>
+                    <li>Nadrabianie zaległości z podstawówki i liceum</li>
+                    <li>Trening przed egzaminami końcowymi</li>
+                </ul>
+            </div>
+            <div class="offer-item">
+                <h2>Fizyka</h2>
+                <ul>
+                    <li>Pomoc w rozwiązywaniu zadań</li>
+                    <li>Tłumaczenie teorii na życiowych przykładach</li>
+                    <li>Przygotowanie do kartkówek i testów</li>
+                </ul>
+            </div>
+        </div>
+        <p class="price-info">Zajęcia odbywają się online lub stacjonarnie. Możliwość wystawienia faktury VAT.</p>
+    </div>
+</body>
+</html>
